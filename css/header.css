@@ -1,0 +1,298 @@
+.topwrap {
+  background: #F2F2F2;
+}
+.topwrap .top_1210 {
+  height: 30px;
+}
+.topwrap .top_1210 .top_left li {
+  display: block;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  background: url(../img/top_bg.png) no-repeat center right;
+}
+.topwrap .top_1210 .top_left .top_left_first {
+  padding-left: 0;
+}
+.topwrap .top_1210 .top_left .top_left_last {
+  background: none;
+}
+.topwrap .top_1210 .top_right {
+  float: right;
+}
+.topwrap .top_1210 .top_right li {
+  float: left;
+  line-height: 30px;
+  padding: 0 15px;
+  background: url(../img/top_bg.png) no-repeat center right;
+}
+.topwrap .top_1210 .top_right .iconmine {
+  width: 0;
+  height: 0;
+  border: 6px solid #706c6e;
+  border-color: #706C6E transparent;
+  border-bottom: none;
+  position: relative;
+  top: 13px;
+  margin-left: 5px;
+}
+.topwrap .top_1210 .top_right .top_right_last {
+  background: none;
+}
+
+.head {
+  height: 110px;
+  position: relative;
+}
+.head .logo {
+  float: left;
+  margin-right: 45px;
+}
+.head .logo a {
+  display: block;
+}
+.head .yijian {
+  float: left;
+  position: absolute;
+  left: 290px;
+  top: 14px;
+}
+.head .yijian a {
+  display: block;
+}
+.head .find {
+  float: left;
+  height: 38px;
+  width: 347px;
+  background: #C69C6D;
+  position: absolute;
+  left: 468px;
+  top: 36px;
+  padding: 2px;
+}
+.head .find .find_input {
+  height: 34px;
+  width: 265px;
+  display: block;
+  float: left;
+  text-indent: 1em;
+  outline: none;
+}
+.head .find .find_sub {
+  display: block;
+  float: left;
+  height: 38px;
+  width: 78px;
+  background: #C69C6D;
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+}
+.head .oversea {
+  width: 200px;
+  height: 30px;
+  background: url(../img/overseadef.jpg) no-repeat;
+  position: absolute;
+  top: 40px;
+  right: 123px;
+}
+.head .shopcart {
+  position: absolute;
+  right: 10px;
+  top: 38px;
+}
+.head .shopcart .carbox {
+  width: 94px;
+  height: 32px;
+  text-indent: 45px;
+  line-height: 32px;
+  color: #666;
+  position: relative;
+  float: right;
+  border: 1px solid #ccc;
+  background: url(../img/share.png) no-repeat -376px -405px;
+}
+.head .shopcart .carbox img {
+  position: absolute;
+  left: 10px;
+  top: 2px;
+}
+.head .shopcart .carbox span {
+  display: block;
+  position: absolute;
+}
+
+.rightmenuwrap {
+  height: 100%;
+  width: 5px;
+  position: fixed;
+  right: 0;
+  background: #333;
+  top: 0;
+  z-index: 100;
+}
+.rightmenuwrap ul {
+  position: absolute;
+  top: 50%;
+  margin-left: -33px;
+  margin-top: -100px;
+}
+.rightmenuwrap ul li {
+  width: 34px;
+  height: 35px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 1px;
+  background: #333 url(../img/toolbars.png) no-repeat;
+}
+.rightmenuwrap ul li span {
+  padding: 0 5px;
+  text-align: center;
+  background: #CF0101;
+  height: 35px;
+  width: 50px;
+  color: #fff;
+  line-height: 35px;
+  position: absolute;
+  top: 0;
+  right: 35px;
+  display: none;
+  border-radius: 5px;
+  opacity: .8;
+}
+.rightmenuwrap ul li:hover {
+  background-color: #CF0101;
+}
+.rightmenuwrap ul li:hover span {
+  display: block;
+}
+.rightmenuwrap ul li:nth-child(1) {
+  background-position: -88px -175px;
+}
+.rightmenuwrap ul li:nth-child(2) {
+  background-position: -50px -0px;
+}
+.rightmenuwrap ul li:nth-child(3) {
+  background-position: -50px -50px;
+}
+.rightmenuwrap ul li:nth-child(4) {
+  background-position: -50px -100px;
+}
+.rightmenuwrap ul li:nth-child(5) {
+  background-position: -190px -150px;
+}
+.rightmenuwrap ul li:nth-child(6) {
+  background-position: -50px -150px;
+}
+.rightmenuwrap ul li:nth-child(7) {
+  background-position: -50px -250px;
+}
+
+.navwrap {
+  background: url(../img/navbg.png) repeat-x;
+}
+.navwrap .nav {
+  height: 40px;
+}
+.navwrap .nav li {
+  width: 82px;
+  height: 38px;
+  display: block;
+  float: left;
+}
+.navwrap .nav li a {
+  display: block;
+  height: 38px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #c8a985;
+  text-align: center;
+}
+.navwrap .nav li:nth-last-child(1) {
+  background: url(../img/share02.png) no-repeat -354px -66px;
+}
+.navwrap .nav li:nth-last-child(2) {
+  background: url(../img/share02.png) no-repeat -296px -66px;
+}
+.navwrap .nav li:nth-last-child(3) {
+  background: url(../img/share02.png) no-repeat -296px -66px;
+}
+.navwrap .nav .nav_oversea {
+  width: 100px;
+  background: url(../img/overseaslogo.gif) no-repeat;
+}
+.navwrap .nav .nav_icon {
+  width: 40px;
+}
+.navwrap .nav .nav_first {
+  width: 130px;
+  background: url(../img/lux_index.png) no-repeat -8px -215px;
+}
+.navwrap .nav .nav_first a {
+  color: #fff;
+}
+.navwrap .nav .nav_first .nav_menu {
+  width: 130px;
+  height: 433px;
+  position: relative;
+  z-index: 100;
+  display: none;
+  border: 1px solid #333;
+}
+.navwrap .nav .nav_first .nav_menu ul li {
+  width: 130px;
+  height: 36px;
+}
+.navwrap .nav .nav_first .nav_menu ul li .nav_menu_list {
+  width: 82px;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 auto;
+  padding-left: 48px;
+  text-align: left;
+  position: relative;
+  opacity: 0.85;
+  background: #fff;
+}
+.navwrap .nav .nav_first .nav_menu ul li .nav_menu_list a {
+  color: #C69C6D;
+  text-align: left;
+}
+.navwrap .nav .nav_first .nav_menu ul li .nav_menu_list a i {
+  position: absolute;
+  right: 2px;
+  top: 0;
+  height: 36px;
+  width: 20px;
+  background: url(../img/share02.png) no-repeat -304px -30px;
+  display: none;
+}
+.navwrap .nav .nav_first .nav_menu ul li .nav_menu_show {
+  display: none;
+  width: 590px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 131px;
+  z-index: 1000;
+}
+.navwrap .nav .nav_first .nav_menu ul li .nav_menu_show dl {
+  height: 50px;
+  margin: 10px 20px 10px 20px;
+  border-bottom: #D7D7D7 1px solid;
+}
+.navwrap .nav .nav_first .nav_menu ul li .nav_menu_show dl dt {
+  float: left;
+  color: #CF0201;
+  width: 105px;
+  font-size: 14px;
+  font-style: normal;
+  padding-left: 25px;
+}
+.navwrap .nav .nav_first .nav_menu ul li .nav_menu_show dl dd {
+  float: left;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=header.css.map */

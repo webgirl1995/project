@@ -1,0 +1,42 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #666666;
+}
+
+ul li {
+  list-style: none;
+}
+
+ol li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  border: none;
+}
+
+body {
+  position: relative;
+  font-family: "微软雅黑";
+  font-size: 12px;
+  width: 100%;
+}
+
+i {
+  display: inline-block;
+  padding-right: 3px;
+}
+
+.top_1210, .head, .nav, .banner, .brandship, .hotstore, .oversealife, .hotitem, .shopping, .promotion, .footer {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=public.css.map */

@@ -5,7 +5,7 @@ $(window).ready(function(){
     new Slider($(".jdxb .goodbox .goodbox_img"),$(".jdxb .goodbox ol"),$(".jdxb .goodbox"),$(".jdxb .goodbox .arr")).init();
     new Slider($(".dcwb .goodbox .goodbox_img"),$(".dcwb .goodbox ol"),$(".dcwb .goodbox"),$(".dcwb .goodbox .arr")).init();
     new Slider($(".jzps .goodbox .goodbox_img"),$(".jzps .goodbox ol"),$(".jzps .goodbox"),$(".jzps .goodbox .arr")).init();
-     new Slider($(".ghhz .goodbox .goodbox_img"),$(".ghhz .goodbox ol"),$(".ghhz .goodbox"),$(".ghhz .goodbox .arr")).init();
+    new Slider($(".ghhz .goodbox .goodbox_img"),$(".ghhz .goodbox ol"),$(".ghhz .goodbox"),$(".ghhz .goodbox .arr")).init();
 })
 function Slider(ul,ol,box,a){
 	this.ul = ul.find("li");
