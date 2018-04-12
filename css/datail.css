@@ -346,10 +346,18 @@ i {
   margin: 0 auto;
 }
 
+.main_top:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
 .main_top {
   width: 1100px;
   margin: 0 auto;
-  height: 745px;
   margin-top: 15px;
 }
 .main_top .main_top_left {
@@ -618,9 +626,17 @@ i {
   background: #c8a985 url(../img/share.png) no-repeat -3px -54px;
 }
 
+.main_bottom:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
 .main_bottom {
   width: 1100px;
-  height: 6000px;
   margin: 0 auto;
 }
 .main_bottom .goods_tab {
@@ -663,7 +679,7 @@ i {
 }
 .main_bottom .main_bottom_left {
   width: 200px;
-  height: 300px;
+  min-height: 300px;
   float: left;
   margin-right: 25px;
 }
@@ -692,17 +708,27 @@ i {
   color: #fff;
   font-weight: bold;
 }
+.main_bottom .main_bottom_right:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
 .main_bottom .main_bottom_right {
+  min-height: 1500px;
   width: 873px;
   float: left;
   border: 1px solid #000000;
 }
 .main_bottom .main_bottom_right .goods_tab_con {
+  width: 873px;
   position: relative;
 }
 .main_bottom .main_bottom_right .goods_tab_con div {
   width: 873px;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   background: #fff;

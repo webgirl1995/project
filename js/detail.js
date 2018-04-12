@@ -52,6 +52,7 @@ function fangdajShow(){
 
 function xxkShow(){
 	$(".main_bottom .goods_tab .goods_tab_tit  li").click(function(){
+		//event.stopPropagation();
 		$(this).css({"background":"#000","color":"#fff"})
 		       .siblings()
 		       .css({"background":"#fff","color":"#000"})
@@ -99,6 +100,9 @@ function tabxtShow(){
 		else{
 			$(".main_bottom .goods_tab").css({
 				"position":""
+			})
+			$(".main_bottom .goods_tab").click(function(){
+				$(document).scrollTop(scrollTop)
 			})
 		}
 		
