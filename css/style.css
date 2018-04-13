@@ -38,7 +38,7 @@
 
 /*banner*/
 .bannerwrap{
-	position: relative;
+	/*position: relative;*/
 	width: 100%;
 }
 .banner_img{
@@ -92,12 +92,12 @@
 }
 .bannerwrap .arr .pre{
 	top: 200px;
-	left: 205px;
+	left: 130px;
 	background: url(../img/templateleft.png) no-repeat;
 }
 .bannerwrap .arr .next{
 	top: 200px;
-	left: 1125px;
+	left: 1080px;
 	background: url(../img/templateright.png) no-repeat;
 }
 

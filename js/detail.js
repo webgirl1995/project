@@ -67,8 +67,8 @@ function xzShow(){
 	$(".main_top_right ul .goods_color dl:not(:last) dd span").mouseenter(function(){
 		$(this).addClass("active")
 	}).mouseleave(function(){
-		$(this).removeClass("active")
-		$(".dianji").addClass("active")
+		//$(this).removeClass("active")
+		$(".dianji").addClass("active").siblings().removeClass("active")
 	}).click(function(){
 		$(this).addClass("dianji")
 		$(this).addClass("active")

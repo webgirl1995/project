@@ -29,7 +29,8 @@ i {
 
 .top_1210, .head, .nav, .banner, .brandship, .hotstore, .oversealife, .hotitem, .shopping, .promotion, .footer {
   width: 1210px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 body {
   height: 100%; }
