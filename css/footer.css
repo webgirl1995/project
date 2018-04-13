@@ -1,11 +1,9 @@
 .footerwrap {
   height: 600px;
   background: url(../img/footerbg.jpg) no-repeat center;
-  border-top: 1px solid #c9c9c9;
-}
-.footerwrap .footer .footer_top {
-  height: 116px;
-  border-top: 1px solid #C9C9C9;
-}
+  border-top: 1px solid #c9c9c9; }
+  .footerwrap .footer .footer_top {
+    height: 116px;
+    border-top: 1px solid #C9C9C9; }
 
 /*# sourceMappingURL=footer.css.map */

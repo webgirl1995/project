@@ -87,6 +87,8 @@ body {
             font-size: 20px;
             color: #999;
             cursor: pointer; }
+            body .mainwrap .main .login .login_tab li:nth-child(2) {
+              color: #000000; }
         body .mainwrap .main .login .login_body {
           height: 370px; }
           body .mainwrap .main .login .login_body .smlogin {
@@ -109,7 +111,7 @@ body {
                 color: #ff9900;
                 cursor: pointer; }
           body .mainwrap .main .login .login_body .zhlogin {
-            margin-top: 40px;
+            margin-top: 25px;
             padding: 0 10px; }
             body .mainwrap .main .login .login_body .zhlogin input {
               width: 298px;
@@ -118,6 +120,18 @@ body {
               padding: 0 20px;
               margin-bottom: 20px;
               outline: none; }
+            body .mainwrap .main .login .login_body .zhlogin .login_tsk {
+              display: block;
+              width: 340px;
+              height: 14px;
+              line-height: 14px;
+              margin-bottom: 10px;
+              text-align: center;
+              font-size: 14px; }
+              body .mainwrap .main .login .login_body .zhlogin .login_tsk.error {
+                color: red; }
+              body .mainwrap .main .login .login_body .zhlogin .login_tsk.right {
+                color: green; }
             body .mainwrap .main .login .login_body .zhlogin .login_zd {
               display: block;
               background: url(../img/login/is_yes_bg.png) no-repeat;
@@ -179,7 +193,7 @@ body {
             font-size: 20px;
             color: #666; }
         body .mainwrap .main .register .regis_body {
-          margin-top: 30px;
+          margin-top: 20px;
           padding: 0 10px;
           height: 370px; }
           body .mainwrap .main .register .regis_body input {
@@ -191,7 +205,7 @@ body {
             outline: none; }
           body .mainwrap .main .register .regis_body .yzm {
             width: 142px; }
-          body .mainwrap .main .register .regis_body span {
+          body .mainwrap .main .register .regis_body .hqyzm {
             display: inline-block;
             float: right;
             height: 50px;
@@ -201,6 +215,18 @@ body {
             text-align: center;
             font-size: 14px;
             cursor: pointer; }
+          body .mainwrap .main .register .regis_body .regis_tsk {
+            display: block;
+            width: 340px;
+            height: 14px;
+            line-height: 14px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 14px; }
+            body .mainwrap .main .register .regis_body .regis_tsk.error {
+              color: red; }
+            body .mainwrap .main .register .regis_body .regis_tsk.right {
+              color: green; }
           body .mainwrap .main .register .regis_body .res_btn {
             width: 338px;
             height: 50px;

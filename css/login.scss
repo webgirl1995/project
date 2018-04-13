@@ -61,6 +61,9 @@ body{
                         font-size: 20px;
                         color: #999;
                         cursor: pointer;
+                        &:nth-child(2){
+                            color: #000000;
+                        }
                     }
                 }
                 .login_body{
@@ -89,7 +92,7 @@ body{
                         }
                     }
                     .zhlogin{
-                        margin-top: 40px;
+                        margin-top: 25px;
                         padding:0 10px;
                         input{
                             width: 298px;
@@ -98,6 +101,21 @@ body{
                             padding: 0 20px;
                             margin-bottom: 20px;
                             outline: none;
+                        }
+                        .login_tsk{
+                            display: block;
+                            width: 340px;
+                            height: 14px;
+                            line-height: 14px;
+                            margin-bottom: 10px;
+                            text-align: center;
+                            font-size: 14px;
+                            &.error{
+                                color: red;
+                            }
+                            &.right{
+                                color: green;
+                            }
                         }
                         .login_zd{
                             display: block;
@@ -180,7 +198,7 @@ body{
                     }
                 }
                 .regis_body{
-                    margin-top: 30px;
+                    margin-top: 20px;
                     padding:0 10px;
                     height: 370px;
                     input{
@@ -194,7 +212,7 @@ body{
                     .yzm{
                         width: 142px;
                     }
-                    span{
+                    .hqyzm{
                         display: inline-block;
                         float: right;
                         height: 50px;
@@ -204,6 +222,21 @@ body{
                         text-align: center;
                         font-size: 14px;
                         cursor: pointer;
+                    }
+                    .regis_tsk{
+                        display: block;
+                        width: 340px;
+                        height: 14px;
+                        line-height: 14px;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        font-size: 14px;
+                        &.error{
+                            color: red;
+                        }
+                        &.right{
+                            color: green;
+                        }
                     }
                     .res_btn{
                         width: 338px;
