@@ -1,6 +1,8 @@
 $(window).ready(function(){
 	var flagState = null;//true登录页面 false注册页面
 	
+	getState()
+	
 	$(".login .login_tab").on("click","li",function(){
 		//alert()
 		var index = $(this).index();
@@ -26,11 +28,27 @@ $(window).ready(function(){
 		$(".hydl").css("display","block");
 		$(".zc").css("display","none");
 	})
+	function getState(){
+		var geturl =  location.href;
+		//console.log(geturl)
+		var a = geturl.split("?");
+		var b = a[1].split("=")[1];
+		var flag=null;
+		if(b=="false"){
+			flag=false
+		}else{
+			flag=true
+		}
+		stateChange(flag)
+	}
 	function stateChange(flagState){
+		//alert(typeof flagState)
 			if(flagState){
+				//alert(1)
 			$(".main .login").css("display","block")
 			$(".main .register").css("display","none")
 		}else{
+			alert(2)
 			$(".main .login").css("display","none")
 			$(".main .register").css("display","block")
 		}
@@ -49,7 +67,7 @@ $(window).ready(function(){
 				success:function(res){
 					if(res==1){
 						alert("登录成功");
-						location.href = "http://127.0.0.1:8020/project/index.html"
+						location.href = `http://127.0.0.1/project/index.html?state=1&login=${loginphone}`;
 					}else if(res==0){
 						$(".login_tsk").addClass("error")
 						$(".login_tsk").html("用户密码不正确");
@@ -200,23 +218,5 @@ $(window).ready(function(){
 			flagRepwd = false;
 		}
 	})
-	
-	
-	
-	
-	
-	
-//	$(".main .register .login_body .zhlogin .login_pwd").blur(function(){
-//		//alert()
-//		var login_pwd = $(this).val();
-//		console.log(login_pwd)
-//		var reg = /^[a-z0-9]{8,16}$/i;
-//		if(!reg.test(login_pwd)){
-//			//console.log("输入有误")
-//			$(".login_tsk").addClass("error")
-//          $(".login_tsk").html("请使用字母、数字的组合，8-16个字符")
-//		}
-//	})
-
-
+    
 })

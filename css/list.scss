@@ -1,0 +1,166 @@
+@charset "utf-8";
+@import "header.scss";
+@import "footer.scss";
+@import "public.scss";
+.mainwrap{
+    .main{
+        width: 1000px;
+        margin: 0 auto;
+        .top{
+            background: #008000;
+            height: 457px;
+        }
+        .brands{
+            height: 357px;
+            margin-top: 15px;
+            .tit{
+                height: 49px;
+                .tit_left{
+                    width: 336px;
+                    float: left;
+                    img{
+                        margin-top: 13px;
+                    }
+                }
+                .tit_right{
+                    width: 71px;
+                    float: right;
+                    a{
+                        display: block;
+                        width: 71px;
+                        height: 52px;
+                        line-height: 52px;
+                        background: url(../img/list/more.png) no-repeat;
+                        color: #000;
+                    }
+                }
+            }
+            .brands_body{
+                padding: 20px 0;
+                height: 240px;
+                li{
+                    width: 200px;
+                    height: 240px;
+                    float: left;
+                    position: relative;
+                    img{
+                        width: 180px;
+                        margin: 0 auto;
+                    }
+                    span{
+                        position: absolute;
+                        left: 10px;
+                        top: 0;
+                        display: none;
+                        width: 180px;
+                        height: 240px;
+                        line-height: 240px;
+                        font-size: 24px;
+                        color: #fff;
+                        background: #000;
+                        margin: 0 auto;
+                        text-align: center;
+                        opacity: 0.5;
+                    }
+                }
+                &:hover{
+                    box-shadow: #a7a7a7 1px  2px 16px;
+                }
+            }
+            
+        }
+        .goods_area{
+            .area_body{
+                height: 350px;
+                .area_list{
+                    height: 350px;
+                    li{
+                        float: left;
+                        width: 200px;
+                        height: 300px;
+                        padding: 25px 0px;
+                        cursor: pointer;
+                        .area_box{
+                            height: 246px;
+                            margin-bottom: 20px;
+                            .area_cons{
+                                img{
+                                    width: 190px;
+                                    height: 190px;
+                                    margin: 0 auto;
+                                }
+                                
+                            }
+                            .area_text{
+                                width: 198px;
+                                margin: 0 auto;
+                                height: 56px;
+                               ._title{
+                                    height: 16px;
+                                    line-height: 16px;
+                                    text-align: center;
+                                    padding-top: 8px;
+                                }
+                                ._price{
+                                    margin-top: 8px;
+                                    color: #df3338;
+                                    font-size: 14px;
+                                    .one{
+                                        width: 50px;
+                                        height: 19px;
+                                        float: left;
+                                        padding-left: 10px;
+                                    }
+                                    .two{
+                                        display: none;
+                                        width: 100px;
+                                        height: 19px;
+                                        float: right;
+                                        border-radius: 5px;
+                                        color: #C69C6D;
+                                        line-height: 19px;
+                                        span{
+                                            display: block;
+                                            padding-left: 5px;
+                                            float: left;
+                                            width: 19px;
+                                            height: 19px;
+                                            background:url(../img/share02.png) no-repeat -95px -164px;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                            &:hover{
+                                box-shadow: #a7a7a7 0px 4px 10px;
+                            }
+                            &:hover  .area_text{
+                                background: #e0e0e0;
+                            }
+                            &:hover ._price .two{
+                                display: block;
+                            }
+                        }
+                        .addcart{
+                            height: 32px;
+                            background: red;
+                            text-align: center;
+                            line-height: 32px;
+                            font-size: 20px;
+                            color: #fff;
+                            border-left: 2px solid #fff;
+                            border-right: 2px solid #fff;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            opacity: 0.9;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+        
+    }
+}

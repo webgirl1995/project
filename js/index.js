@@ -1,13 +1,15 @@
 $(window).ready(function(){
+	loginState();
 	menuShow();//菜单
+	navShow();
 	brandShow();//品牌
 	rightmenuShow();//右侧固定菜单
 	loutiShow();//楼梯
     hotstoreShow();	
     hotitemShow();
     shoppingtabShow();
+    
 })
-
 
 function rightmenuShow(){
 	$(".rightmenuwrap ul li:last").click(function(){
@@ -125,6 +127,16 @@ function menuShow(){
 	})
 }
 
+function navShow(){
+	$(".navwrap .nav").on("click","li:not('.nav_icon')",function(){
+		$(this).css({"background":"#cf0101"}).siblings().not('.nav_icon').css("background","#111")
+		$(this).children("a").css({"color":"#fff"}).end().siblings().children("a").css("color","#c8a985")
+	})
+	
+}
+
+
+
 function brandShow(){
 	$(".brand_list li").mouseenter(function(){
 		$(this).find(".brand_cont").stop().animate({top:0},1000)
@@ -172,6 +184,16 @@ function shoppingtabShow(){
 	})
 }
 
-function goodsboxShow(){
-	
+function loginState(){
+	if(location.href.split("?")[1]){
+		var a = location.href.split("?")[1].split("&");
+		console.log(a);
+		
+		for(var i=0;i<a.length;i++){
+			console.log(a[i].split("="));
+			if(a[0].split("=")[1]==1){
+				$(".login").html(a[1].split("=")[1]);
+			}
+		}
+	}
 }

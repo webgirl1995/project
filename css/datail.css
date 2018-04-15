@@ -21,6 +21,18 @@
         line-height: 30px;
         padding: 0 15px;
         background: url(../img/top_bg.png) no-repeat center right; }
+        .topwrap .top_1210 .top_right li:nth-child(1) {
+          height: 30px; }
+        .topwrap .top_1210 .top_right li:hover a {
+          color: #b28247; }
+        .topwrap .top_1210 .top_right li .login {
+          display: inline-block;
+          width: 35px;
+          height: 30px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: red; }
       .topwrap .top_1210 .top_right .iconmine {
         width: 0;
         height: 0;
