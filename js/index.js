@@ -17,7 +17,7 @@ function rightmenuShow(){
 		$("body,html").animate({"scrollTop":0},1500)
 	})
 	$(".rightmenuwrap ul li:not(:last)").mouseenter(function(){
-		console.log($(this).index())
+		//console.log($(this).index())
 		$(this).find("span").stop().fadeIn(1000)
 		       .end().siblings().find("span").stop().fadeOut(100)
 	})

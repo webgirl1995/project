@@ -294,6 +294,22 @@ i {
   margin: 0 auto;
   position: relative; }
 
+.active {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: red;
+  top: 0;
+  left: 10px; }
+
+.rightmenuwrap ul .shopCart {
+  text-align: right;
+  color: red;
+  padding-right: 2px;
+  font-weight: bold; }
+  .rightmenuwrap ul .shopCart:hover {
+    color: #000000; }
+
 .mainwrap .main {
   width: 1000px;
   margin: 0 auto; }
@@ -327,7 +343,8 @@ i {
         width: 200px;
         height: 240px;
         float: left;
-        position: relative; }
+        position: relative;
+        cursor: pointer; }
         .mainwrap .main .brands .brands_body li img {
           width: 180px;
           margin: 0 auto; }
@@ -347,73 +364,83 @@ i {
           opacity: 0.5; }
       .mainwrap .main .brands .brands_body:hover {
         box-shadow: #a7a7a7 1px  2px 16px; }
-  .mainwrap .main .goods_area .area_body {
-    height: 350px; }
-    .mainwrap .main .goods_area .area_body .area_list {
-      height: 350px; }
-      .mainwrap .main .goods_area .area_body .area_list li {
+  .mainwrap .main .goods_area {
+    margin-bottom: 10px; }
+    .mainwrap .main .goods_area .area_tit {
+      margin-bottom: 5px;
+      height: 80px; }
+      .mainwrap .main .goods_area .area_tit img {
+        width: 217px;
         float: left;
-        width: 200px;
-        height: 300px;
-        padding: 25px 0px;
-        cursor: pointer; }
-        .mainwrap .main .goods_area .area_body .area_list li .area_box {
-          height: 246px;
-          margin-bottom: 20px; }
-          .mainwrap .main .goods_area .area_body .area_list li .area_box .area_cons img {
-            width: 190px;
-            height: 190px;
-            margin: 0 auto; }
-          .mainwrap .main .goods_area .area_body .area_list li .area_box .area_text {
-            width: 198px;
-            margin: 0 auto;
-            height: 56px; }
-            .mainwrap .main .goods_area .area_body .area_list li .area_box .area_text ._title {
-              height: 16px;
-              line-height: 16px;
-              text-align: center;
-              padding-top: 8px; }
-            .mainwrap .main .goods_area .area_body .area_list li .area_box .area_text ._price {
-              margin-top: 8px;
-              color: #df3338;
-              font-size: 14px; }
-              .mainwrap .main .goods_area .area_body .area_list li .area_box .area_text ._price .one {
-                width: 50px;
-                height: 19px;
-                float: left;
-                padding-left: 10px; }
-              .mainwrap .main .goods_area .area_body .area_list li .area_box .area_text ._price .two {
-                display: none;
-                width: 100px;
-                height: 19px;
-                float: right;
-                border-radius: 5px;
-                color: #C69C6D;
-                line-height: 19px; }
-                .mainwrap .main .goods_area .area_body .area_list li .area_box .area_text ._price .two span {
-                  display: block;
-                  padding-left: 5px;
-                  float: left;
-                  width: 19px;
+        margin-top: 20px; }
+      .mainwrap .main .goods_area .area_tit .tit_right {
+        width: 71px;
+        float: right;
+        margin-top: 20px; }
+        .mainwrap .main .goods_area .area_tit .tit_right a {
+          display: block;
+          width: 71px;
+          height: 52px;
+          line-height: 52px;
+          background: url(../img/list/more.png) no-repeat;
+          color: #000; }
+    .mainwrap .main .goods_area .area_body {
+      height: 315px;
+      box-shadow: #a7a7a7 1px  2px 16px; }
+      .mainwrap .main .goods_area .area_body .area_list {
+        height: 315px; }
+        .mainwrap .main .goods_area .area_body .area_list li {
+          float: left;
+          width: 200px;
+          height: 265px;
+          padding: 25px 0px;
+          cursor: pointer; }
+          .mainwrap .main .goods_area .area_body .area_list li .area_box {
+            height: 246px;
+            margin-bottom: 20px; }
+            .mainwrap .main .goods_area .area_body .area_list li .area_box .area_cons img {
+              width: 190px;
+              height: 190px;
+              margin: 0 auto; }
+            .mainwrap .main .goods_area .area_body .area_list li .area_box .area_text {
+              width: 198px;
+              margin: 0 auto;
+              height: 56px; }
+              .mainwrap .main .goods_area .area_body .area_list li .area_box .area_text ._title {
+                height: 16px;
+                line-height: 16px;
+                text-align: center;
+                padding-top: 8px; }
+              .mainwrap .main .goods_area .area_body .area_list li .area_box .area_text ._price {
+                margin-top: 8px;
+                color: #df3338;
+                font-size: 14px; }
+                .mainwrap .main .goods_area .area_body .area_list li .area_box .area_text ._price .one {
+                  width: 50px;
                   height: 19px;
-                  background: url(../img/share02.png) no-repeat -95px -164px; }
-          .mainwrap .main .goods_area .area_body .area_list li .area_box:hover {
-            box-shadow: #a7a7a7 0px 4px 10px; }
-          .mainwrap .main .goods_area .area_body .area_list li .area_box:hover .area_text {
-            background: #e0e0e0; }
-          .mainwrap .main .goods_area .area_body .area_list li .area_box:hover ._price .two {
-            display: block; }
-        .mainwrap .main .goods_area .area_body .area_list li .addcart {
-          height: 32px;
-          background: red;
-          text-align: center;
-          line-height: 32px;
-          font-size: 20px;
-          color: #fff;
-          border-left: 2px solid #fff;
-          border-right: 2px solid #fff;
-          border-radius: 5px;
-          cursor: pointer;
-          opacity: 0.9; }
+                  float: left;
+                  padding-left: 10px; }
+                .mainwrap .main .goods_area .area_body .area_list li .area_box .area_text ._price .addToCart {
+                  display: none;
+                  width: 100px;
+                  height: 19px;
+                  float: right;
+                  border-radius: 5px;
+                  color: #C69C6D;
+                  line-height: 19px;
+                  position: relative; }
+                  .mainwrap .main .goods_area .area_body .area_list li .area_box .area_text ._price .addToCart span {
+                    display: block;
+                    padding-left: 5px;
+                    float: left;
+                    width: 19px;
+                    height: 19px;
+                    background: url(../img/share02.png) no-repeat -95px -164px; }
+            .mainwrap .main .goods_area .area_body .area_list li .area_box:hover {
+              box-shadow: #a7a7a7 0px 4px 10px; }
+            .mainwrap .main .goods_area .area_body .area_list li .area_box:hover .area_text {
+              background: #e0e0e0; }
+            .mainwrap .main .goods_area .area_body .area_list li .area_box:hover ._price .addToCart {
+              display: block; }
 
 /*# sourceMappingURL=list.css.map */
